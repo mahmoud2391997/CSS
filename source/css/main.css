@@ -1,0 +1,50 @@
+/* valid */
+._user-name {
+}
+
+/* valid */
+.-user-name {
+}
+
+/* valid */
+.-user-name {
+}
+
+/* not valid */
+.1user-name {
+}
+
+/* not valid */
+.@user-name {
+}
+
+/* not valid */
+.user@name {
+}
+
+/* valid */
+._user10name {
+}
+
+/* ? */
+.u {
+}
+/* bad */
+.USERNAME {
+}
+
+/* bad */
+.UserName {
+}
+
+/* good */
+.user-name {
+}
+
+/* bad */
+.userName {
+}
+
+/* bad */
+.usernameprofile {
+}
