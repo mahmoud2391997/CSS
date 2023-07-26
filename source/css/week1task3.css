@@ -1,0 +1,43 @@
+.parent-1 div{
+    background-color: #eee;
+    display: inline-block;
+    padding: 50px 80px;
+    margin: 20px;
+    
+
+}
+.one{
+    border: 5px solid red;
+outline: 5px solid black;
+}
+.two{
+    border: 5px solid;
+    border-color: blue green;
+    outline: 5px solid black;
+}
+.three{
+    border: 5px dashed;
+    border-color: red green blue yellow;
+    outline: 5px solid black;
+
+ 
+}
+.parent2 div{
+    background-color: #ddd;
+
+ width: 400px;
+margin: 20px;
+padding: 20px;
+}
+.one1{
+    outline: 10px solid #ddd;
+border-left: 10px solid #e91e63;
+}
+.two2{
+ visibility: hidden;
+}
+.three3{
+    outline: 10px solid #ddd;
+border-left: 10px solid #009688;
+
+}

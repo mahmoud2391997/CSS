@@ -35,3 +35,48 @@ body{
 
 
 }
+div{
+    /* border-width: 10px;
+    border-color: red;
+    border-style: solid; */
+    border: 10px red solid;
+    outline: 10px solid blue;
+    outline-style: dashed;
+    width: 300px;
+    padding: 10px;
+    background-color: red;
+    margin: 10px;
+    height: 30px;
+    width: 300px;
+}
+/* 
+Block
+-Take full width if width not given
+-respect width,height,padding,margin
+-add line break
+ */
+ span{
+    background: #00FF00;
+    width: 400px;
+    height: 100px;
+    padding: 10px;
+    display: inline-block;
+    margin: 20px;
+ }
+ /* 
+ inline 
+ -don't add line break
+ -respect padding and margin(left and right only)don't respect width,height
+ - */
+ /* 
+ inline block
+ -allow elements before and after it
+ -respect width,height,padding,margin
+
+ */
+ .one{
+background-color: red;
+visibility: hidden;
+margin: 10px 0;
+
+ }
