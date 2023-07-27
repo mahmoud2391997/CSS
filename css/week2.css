@@ -1,0 +1,48 @@
+.one{
+    border-bottom: 2px solid red;
+    color: red;
+}
+.two{
+    border-bottom: 2px solid green;
+    color: green;
+}
+.three{
+    border-bottom: 2px solid blue;
+    color: blue;
+}
+.four{
+    border-bottom: 2px solid yellow;
+    color: yellow;
+}
+.one,.two,.three,.four,.paragraph{
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #EEE;
+
+
+}
+div p{
+    color: red;
+}
+div .special{
+    color: green;
+}
+div .special{
+    background-color: RED;
+    padding: 10px;
+    display: inline-block;
+   min-width: 400px;
+   max-width: 400px;
+   
+   
+
+}
+div{
+    width: 150px;
+    height: 150px;
+    background-color: #eee;
+    margin: 20px auto;
+    border-radius: 6px;
+    overflow-y: hidden;
+
+}
