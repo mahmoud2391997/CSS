@@ -21,9 +21,7 @@
 
 
 }
-div p{
-    color: red;
-}
+
 div .special{
     color: green;
 }
@@ -38,11 +36,113 @@ div .special{
 
 }
 div{
-    width: 150px;
-    height: 150px;
+    
     background-color: #eee;
     margin: 20px auto;
     border-radius: 6px;
-    overflow-y: hidden;
 
+}
+.class{
+    background-color: grey;
+    /* color: rebeccapurple; */
+text-shadow: 0 0 0 red;
+
+ }
+ .class2{
+    background-color: #f9f9f9;
+    text-align: center;
+direction: rtl;
+ }
+ .class3{
+    background-color: #f9f9f9;
+    text-align: center;
+direction: rtl;
+ }
+ /* 
+ text color
+ -background-color
+ -color
+ 
+ text shadow
+ -syntax => text shadow:h- shadow v-shadow blur color*/
+.inner
+{
+    text-align: center;
+    vertical-align: top;
+ }
+ .outer
+{
+    text-align: center;
+ }
+ .class4{
+    background-color: #f9f9f9;
+    text-decoration:  none;
+    text-transform: capitalize;
+
+ }
+ .class5{
+
+text-decoration: none;}
+.class6{
+    letter-spacing: 2px;
+    text-indent: 100px;
+
+}
+.class7{
+    display: inline-block;
+word-break:break-word; 
+   line-height: 2.555;
+    word-spacing: 5px;
+    width: 400px;
+}
+.class8{
+    white-space: nowrap;
+}
+.class9{
+    background-color: #ddd;
+    padding: 10px;
+    width: 200px;
+    white-space:nowrap ;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.class9:hover{
+    overflow: visible;
+
+}
+.class11{
+    text-align: center;
+    padding: 20px;
+    background-color: #EEE;
+    font-size: 20px;
+    border:2px solid blue;
+
+}
+body{
+    font-family:"Cairo",sans-serif;
+}
+.class11 p{
+border: 2px solid;
+border-color: inherit;
+padding: inherit;
+}
+.with-ser,.sans-ser{
+background-color: #ddd;
+padding: 10px;
+text-transform: capitalize;
+}
+/* 
+css units
+-px
+-em =>Time
+-rem =>Root Time
+-vw => view port width
+-percentage => percent of the parent specification
+
+*/
+.hello{
+    font-size: 5vw;
+}
+.hello span{
+    font-size: 1em;
 }
