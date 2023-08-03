@@ -134,15 +134,44 @@ text-transform: capitalize;
 /* 
 css units
 -px
--em =>Time
--rem =>Root Time
+-em =>one Time of the parent specification
+-rem =>Root Time {one time of the root element} 
 -vw => view port width
+1vw = 1% of the width of the page
 -percentage => percent of the parent specification
 
 */
 .hello{
     font-size: 5vw;
+    font-style: italic;
+    font-style: normal;
+    font-variant: small-caps ;
+    font-weight: 300;
 }
 .hello span{
     font-size: 1em;
+    text-transform: uppercase;
+}
+/* 
+font style
+font variant
+font weight
+*/
+
+button{
+    background: transparent;
+    border: none;
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+}
+.test{
+    cursor: pointer;
+
+}
+.p1{
+    cursor: grab;
+}
+.p2{
+    cursor:move;
 }

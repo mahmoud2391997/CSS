@@ -1,0 +1,32 @@
+/* 
+float
+clear */
+body{
+    margin: 0;
+}
+.parent div{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #eee;
+    width:calc(88%/6);
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+}
+.one{
+    background-color: red;
+    display: block;
+    opacity: 0.1;
+}
+.two{
+    background-color: rgb(255 0 0/0.1);
+    display: block;
+
+
+}
+/* 
+content width is : 100%
+6 spaces 2% * 6 => 6% from the content
+88% available space
+5 elements the width is : 95%/4
+*/
