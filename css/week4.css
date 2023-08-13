@@ -1,0 +1,132 @@
+.one{
+    background-color: red;
+    color: white;
+}
+.two{
+    background-color: #eee;
+    width: 100px;
+    height: 100px;
+}
+a{
+    color: green;
+    text-decoration: none;
+}
+a:hover{
+    color: red;
+}
+.ch:checked{
+    color: red;
+    display: none;
+}
+a:visited{
+    color: blue;
+}
+p{
+    background-color: #eee;
+    width: 100px;
+    height: 100px;}
+
+
+.in:focus{
+    border-color: yellow;
+    outline: none;
+}
+.lorem1::first-letter{
+    display: inline-block;
+    background-color: red;
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+}
+.lorem2::first-letter{
+    display: inline-block;
+    background-color: red;
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+}
+.lorem3::first-line{
+    display: inline-block;
+    background-color: red;
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+}
+.parent{
+    margin-bottom: 20px;
+    overflow: hidden;
+    counter-increment: members-counter;
+}
+.lorem{
+    background-color: #eee;
+    padding: 10px;
+    width: 600px;
+    float: left;
+    position: relative;
+}
+.letter{
+background-color: #eee;
+width: 50px;
+margin-left: 20px;
+padding: 10px;
+height: 55.5px;
+float: left;
+font-size: 50px;
+text-align: center;
+}
+hr{
+    margin: 20px 0;
+}
+
+/* .lorem .pipeline{
+position: absolute;
+width: 5px;
+height: 100%;
+right: -10px;
+top: 0;
+background-color: blue;
+
+} */
+.lorem::after{
+    content: counter(members-counter);
+    position: absolute;
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-weight: bold;
+    right: -10px;
+    top: 50%;
+    margin-top: -10px;
+    color: white;
+    
+}
+.lorem::before{
+    content: "";
+    width: 0px;
+height: 0px;
+position: absolute;
+left: -20px;
+top: 50%;
+margin-top: -10px;
+border-width: 10px;
+border-color: transparent green transparent transparent;
+border-style: solid;
+}
+ul{
+    list-style: none;
+}
+ul li::before{
+    width: 0px;
+height: 0px;
+position: absolute;
+left: -20px;
+top: 50%;
+margin-top: -10px;
+border-width: 10px;
+border-color: transparent green transparent transparent;
+border-style: solid;
+    content: "";
+}
+ul li{
+position: relative;}
