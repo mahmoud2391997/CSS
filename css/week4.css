@@ -117,6 +117,8 @@ ul{
     list-style: none;
 }
 ul li::before{
+    margin: -6px;
+
     width: 0px;
 height: 0px;
 position: absolute;
@@ -129,4 +131,52 @@ border-style: solid;
     content: "";
 }
 ul li{
-position: relative;}
+position: relative;
+margin: 10px;}
+.class{
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+}
+/* 
+[1] most of users use modern browser
+[2] vs code addon to add the prefix
+[3] task runner
+[4]
+*/
+.class1{
+    border-radius: 5px;
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    margin: 20px auto;}
+    .class2{
+        padding: 20px;
+        background-color: #eee;
+        margin: 20px auto;
+        width: 300px;
+        box-shadow: 0 0 0 0 #ddd inset;
+
+    }
+    .parent2{
+        width: 600px;
+        overflow: hidden;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #ddd;
+
+    }
+   .parent2 .one{
+    background-color: #eee;
+    width: 300px;
+float: left;
+color: black;
+padding: 10px;
+border: 10px solid red;
+box-sizing: border-box;
+   }
+   *{
+    box-sizing: border-box;
+   }

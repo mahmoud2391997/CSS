@@ -1,0 +1,104 @@
+.parent div{
+width: 100px;
+height: 100px;
+background-color: #ddd;
+display: inline-block;
+margin: 30px;
+border-radius: 50%;
+border: 3px solid black;
+box-shadow: 5px 5px 0 0 #2196f3 ,-5px -5px 0 0 #e91e63;
+position: relative;
+counter-increment: member-counter;
+}
+.parent div::before{
+    content: "Element";
+    position: absolute;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    top: 38px;
+    left: 22px;
+}
+.parent div::after{
+    content: counter(member-counter);
+    position: absolute;
+background-color: black;
+color: white;
+padding: 5px 10px;
+border-radius: 50%;
+font-weight: bold;
+top: -15px;
+left: 34px;
+}
+.empty{
+    width: 100px;
+    height: 100px;
+    background-color: #efefef;
+    margin: 20px auto;
+    box-shadow: inset 0 0 15px 10px #898383;
+    border-top-left-radius: 15px 27px;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 15px 27px;
+
+}
+.parent2{
+    width: 550px;
+    margin: 20px auto;
+
+}
+.pro,.basic{
+    width: 200px;
+    height: 300px;
+    background-color: #eee;
+    float: left;
+    margin: 20px;
+}
+*{
+    box-sizing: border-box;
+}
+.basic p,.pro p{
+    background-color: #03a9f4;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 150px;
+    position: relative;
+    left: 25px;
+}
+.free,.cost{
+    width: 150px;
+    height: 150px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin-top: 50px;
+    margin-left: 5px;
+    position: relative;
+    left: 20px;
+    text-align: center;
+    line-height: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+.parent2::before{
+    z-index: 2;
+    content: "Or";
+    position: relative;
+    background-color: #03a9f4;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    right: 253px;
+    top: 180px;
+
+}
+.parent2::after{
+content: "";
+position: absolute;
+right: 200px;
+height: 300px;
+width: 2px;
+background-color: #03a9f4;
+top: 332px;
+right: 421px;
+z-index: 1;
+}
