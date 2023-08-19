@@ -1,0 +1,55 @@
+.assign-1{
+    background-color: #eee ;
+    width:400px ;
+    height: 200px;
+    margin: 100px auto;
+    padding: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+transition-duration: 0.5s;
+}
+.down{
+    background-color: #ddd;
+    padding: 20px;
+    margin-top: 10px;
+    transition-delay: 0.5s;
+    transition-duration: 0.5s;
+}
+.assign-1:hover{
+    margin-top: 50px;
+
+}
+.assign-1:hover .down{
+
+    margin-top: 30px;
+
+}
+.assign-2{
+width: 400px !important;
+background-color: #eee !important;
+margin: 20px auto;
+border: none !important;
+font-size: 20px !important;
+text-align: center;
+}
+.assign-2::before{
+    position: absolute;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    content: "Elzero";
+}
+.assign-3 div{
+border: 3px solid var(--mainColor, black);
+width: 400px;
+margin: 20px auto;
+color: var(--mainColor,red);
+padding: var(--mainPadding,10px);
+}
+/* :root {
+    --mainColor: #009688;
+    --mainPadding: 10px;
+  }
+   */
+  
