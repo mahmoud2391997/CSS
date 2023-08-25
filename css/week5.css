@@ -7,8 +7,7 @@ Transition
 */
 
 *{
--webkit-box-sizing: border-box;
--moz-box-sizing: border-box;
+
 box-sizing: border-box;
 }
 .one{
@@ -105,4 +104,77 @@ a:hover{
     --mainColor:black;
     background-color: var(--mainColor);
     color: white;
+}
+/* 
+-Flexible box
+-For parent
+-display: flex => to start flexiable box
+flex direction: row =>default value
+flex wrap: nowrap =>default value
+flex-flow: [flex-direction] [flex-wrap]
+--
+justify-content: flex-start =>default value
+-- align-items: stretch => default value 
+align-content:stretch => default value
+child
+-- flex-grow: 0:=> default value
+--flex-shrink: 1 =>default value
+-- order: 0 =>default value
+--flex-basis:auto=> default value
+flex:[Flex grow] [Flex shrink] [Flex basis] 01 Auto
+align-self: auto =>Default value
+*/
+.flex{
+
+    background-color: #eee;
+    width: 600px;
+    padding: 20px;
+    margin: 20px auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;  
+    align-items: flex-start;  
+}
+.flex div{
+    background-color: #f00;
+    color: white;
+    float: left;
+    width: calc(100%/3);
+    text-align: center;
+    padding: 20px;
+}
+.float{
+    overflow: hidden;
+    background-color: #eee;
+    width: 600px;
+    padding: 20px;
+    margin: 20px auto;  
+}
+.float div{
+    background-color: #f00;
+    color: white;
+    float: left;
+    width: calc(98%/3);
+    text-align: center;
+    padding: 20px;
+}
+.Flex div{
+    background-color: #f00;
+    color: white;
+    width: 80px;
+    text-align: center;
+    padding: 20px;
+    margin-right: 5px;
+    
+}
+.Flex{
+    background-color: #eee;
+    width: 800px;
+    padding: 20px;
+    margin: 20px auto;
+    display: flex;
+
+}
+.in{
+    display: inline-block;
 }
