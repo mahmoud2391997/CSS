@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 .img1{
     transition: 0.3s;
@@ -26,7 +28,7 @@
 gradient
 linear gradient (Direction || Angle, Color Stop1,Color Stop2,Color Stop3,)
 */
-div{
+.gradients{
     background-image: linear-gradient();
     width: 800px;
     height: 300px;
@@ -34,7 +36,7 @@ div{
     margin: 20px auto;
     position: relative;
 }
-div::before{
+.gradients::before{
     content: '';
     position: absolute;
     top: -5px;
@@ -55,3 +57,54 @@ a{
     pointer-events: none;
 
 }
+/* 
+grid
+parent
+--display:grid|inline-grid
+grid-template-colums=>[number of columns width In] =>[px,%, auto,repaeat(),mix]
+grid-template-rows=>[number of rows height In] =>[px,%, auto,repaeat(),mix]
+gap: [row gap] [column gap]
+grid area: [Grid row start] [grid column start] [grid row end] [grid column end]
+*/
+.parent{
+    margin: 20px auto;
+    height: 500px;
+    background-color: #eee;
+    grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+   
+    display: grid;
+}
+.parent div{
+    background-color: red;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+   
+   
+}
+.page{
+    display: grid;
+    height: 100vh;
+    background-color: #eee;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: 50px auto 30px;
+    grid-template-areas: "logo logo nav nav nav nav nav nav nav nav""cont cont cont cont cont cont cont side side side""footer footer footer footer footer footer footer footer footer footer";
+}
+ul li{
+    display: inline-block;
+}
+h2{
+    grid-area: logo;
+}
+nav{
+    grid-area: nav;
+}
+section{
+    grid-area: cont;
+}
+aside{
+    grid-area: side;
+}
+
