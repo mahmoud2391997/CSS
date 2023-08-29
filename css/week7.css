@@ -9,10 +9,33 @@
 -grad => Gradians
 -turn => Turn
 -translate
--
+-skewx
+-skewy
+-skew
+-matrix
+-Syntax => martix (scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())
+-transform-origin
+-Syntax 
+-Default Values => 50% 50% 0
+-2D transform => transform-origin(X,Y)
+-2D transform => transform-origin(X,Y,Z)
+X-axis
+-CSS Unit [px,em,rem]
+-%
+-Keyword
+--left = 0%
+--center = 50%
+--right =100%
+y-axis
+-CSS Unit [px,em,rem]
+-%
+-Keyword
+--Top = 0%
+--center = 50%
+--right =100%
 */
 .shape div{
-    width: 90%;
+    width: 400px;
     height: 100px;
     background-color: rgb(255 0 0 /39%);
     color: white;
@@ -23,6 +46,8 @@
     font-size: 30px;
     margin-top: 5%;
     margin-bottom: 5%;
+    margin: 20px auto;
+ position: relative;
 }
 .image{
     overflow: hidden;
@@ -36,4 +61,31 @@ transition: 0.5s;
 .image:hover img{
     transform: scale(1.3) rotate(5deg);
     opacity: 0.6;
+}
+h2{
+    position: relative;
+    color: white;
+    margin: 20px auto;
+    width: fit-content;
+
+}
+h2::before{
+    content: "";
+    background-color: red;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.shape .origin{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    left: 50%;
+    top: 33%;
+    transform: translate(-50%,-50%);
 }
