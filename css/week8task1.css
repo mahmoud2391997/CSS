@@ -1,0 +1,170 @@
+.one{
+    width: 50px;
+    height: 50px;
+    margin: 40px auto;
+    border-radius: 50%;
+    background-color: white;
+    border: 5px solid blue;
+    border-bottom-color: transparent;
+    position: relative;
+    animation-name: spin;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+
+}
+.three{
+    width: 50px;
+    height: 50px;
+    margin: 40px auto;
+    border-radius: 50%;
+    background-color: grey;
+    border: 5px solid black;
+    border-bottom-color: transparent;
+    position: relative;
+    animation-name: spin;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-play-state: running;
+    display: inline-block;
+    animation-direction: reverse;
+
+}
+.one::after{
+    position: absolute;
+    content: "";
+    width: 140%;
+    height: 140%;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 5px solid yellow;
+    border-bottom-color: transparent;
+    top: -15px;
+    right: -15px;
+    animation-name: spin;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+
+}
+.one::before{
+    animation-duration: 3s;
+    animation-timing-function: linear;
+
+    position: absolute;
+    content: "";
+    width: 180%;
+    height: 180%;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 5px solid black;
+    border-bottom-color: transparent;
+    top: -25px;
+    right: -25px;
+    animation-name: spin;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+@keyframes spin{
+to{
+    transform: rotate(1turn);
+}
+}
+.one:hover{
+    animation-play-state: running;
+}
+.one:hover::after{
+    animation-play-state: running;
+}
+.one:hover::before{
+    animation-play-state: running;
+}
+.E,.L{
+color: black;
+    font-size: 150px;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+.L::after{
+    top: 127px;
+    right: 6px;
+    content: "";
+    background-color: yellow;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    animation-name: move;
+    animation-duration: 5s;
+
+}
+.E::after{
+    top: 32px;
+    right: 12px;
+    content: "";
+    background-color: yellow;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    animation-name: move2;
+    animation-duration: 5s;
+    animation-delay: 5s;
+
+}
+@keyframes move {
+ 0%{
+
+ }
+ 40%{
+    opacity: 1;
+    transform: translateX(-55px);
+    
+ }
+ 80%{
+    opacity: 1;
+
+    transform: translate(-55px,-95px);
+}
+100%{
+opacity: 0;
+transform: translate(-55px,-95px);
+}
+}
+@keyframes move2 {
+ 0%{
+
+ }
+ 10%{
+    transform: translateX(-63px);
+    
+ }
+ 20%{
+
+    transform: translate(-64px,45px);
+}
+30%{
+    transform: translate(-4px,45px);
+
+}
+40%{
+    transform: translate(-64px,45px);
+}
+50%{
+    transform: translate(-64px,95px);
+}
+60%{
+transform: translateY(95px);
+}
+70%{
+    transform: translate(-64px,95px);
+}
+90%{
+    transform: translateX(-63px);
+}
+100%{
+
+}
+}
