@@ -1,0 +1,33 @@
+/* div:nth-child(1),:nth-last-child(2){
+    color:red
+} */
+/* .parent .child:nth-child(2){
+    color:red
+
+} */
+/* .parent:nth-child(2){
+    color:red
+
+} */
+/* body > div[title="Elzero"]:nth-child(4),
+div[title ="HTML"],
+div[title ="Hello"]{
+    color:red
+
+} */
+/* div:nth-child(2)>div[title="Elzero"]{
+    color:red
+
+} */
+/* div:nth-child(2)>div:nth-child(4),
+div:nth-child(1)>div:nth-child(3){
+    color:red
+
+} */
+/* div:nth-child(1)>div:nth-child(5)
+{
+    color: red;
+} */
+p,div:nth-child(2),div:nth-child(3){
+    color: red;
+}
