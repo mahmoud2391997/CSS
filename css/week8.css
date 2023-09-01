@@ -12,7 +12,47 @@ Animation
 -play-state
 -shorthand
 */
-
+/*
+CSS selector 
+- * every element
+- Element => [p,div,h2]
+-Element OtherElement => div p
+-.class-name
+-#id-name
+-.parent .child
+-.class-one.class-two
+-.class-name div, .class-name p
+-Element.class-name
+-.parent > .child =>Direct child
+-Element + Other Element =>[div + p]
+-Element ~ Other Elements => [p ~ div]
+-[Attribute]
+-Element[Attribute]
+-[Attribute = Value]
+-Element [Attributre=Value] => input[type="submit"]
+-[Attribute~=Value]=> Contains A word
+-[Attribute*=Value]=> Contains A String
+-[Attribute^=Value]=> Starts with a string
+-:first child
+-:last child
+-:first-of-type
+-:last-of-type
+-:only-child
+-:only-of-type
+-:not(Selectors)
+-:nth-child(n)
+-:nth-last-child(n)
+-:nth-of-type(n)
+-:nth-last-of-type(n)
+-:root
+-:checked
+-:empty
+-:disabled
+-:required
+-::selection
+-:focus
+-::placeholder
+*/
 *{
     box-sizing: border-box;
     margin: 0;
